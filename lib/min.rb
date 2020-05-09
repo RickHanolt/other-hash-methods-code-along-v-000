@@ -9,5 +9,5 @@ require 'pry'
 # }
 
 def get_the_min(groceries)
-  #code your solution here!
+  (groceries.values.join(",").split(",").sort {|a,b| a <=> b}).first
 end
